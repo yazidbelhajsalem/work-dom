@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  </head>
+  <body>
+    <section class="container">
+      <div class="acceuil">
+        <img src="vetement.webp" id="img1" width="170px" alt="t shirt" />
+        <h1>Price in Dinars</h1>
+        <h2 id="prix1">40</h2>
+        <button  id="addtshirt" type="+Add to carte">+Add to carte</button>
+        
+        <button id="click" onclick="coeur()"><i id="coeur" class="fa-regular fa-heart"></i></button>
+        
+        
+        <br>
+        <img src="djeans.webp" id="img2" alt="pantalon" />
+        <h1>Price in Dinars</h1>
+        <button id="addpantalon" type="+Add to carte">+Add to carte</button>
+        <h2 id="prix2">90</h2>
+        <br />
+        <img src="chaussures.webp" id="img3" alt="chassure" />
+        <h1>Price in Dinars</h1>
+        <button id="addchaussure" type="+Add to carte">+Add to carte</button>
+        <h2 id="prix3">200</h2>
+      </div>
+      <div class="cart">
+        <img id="imgvide" src="" alt="" width="200" height="150" />
+        <br />
+        <button id="plus" onclick="plus()">+</button>
+        <h2 id="count">1</h2>
+        <br />
+        <button id="moins" onclick="moins()">-</button>
+        <br />
+        <h2>Total</h2>
+        <h2 id="total"></h2>
+        <br>
+        <button id="cl" onclick="clear()" style="font-size:24px"><i class="fa fa-trash" style="color: blue;"></i></button>
+      </div>
+     
+    </section>
+
+    <script src="style.js"></script>
+  </body>
+</html>
